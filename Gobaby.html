@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.zoom div img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom div:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+  
+  
+}
+h6 {
+  font-size: 60px;
+}
+p7 {
+  font-size: 20px;
+}
+</style>
+<body>
+  <body style="background-color:rgb(252, 252, 252);">
+  </body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top w3-light">
+  <div class="w3-row w3-large w3-black">
+    <div class="w3-col s3">
+      <a  href="#" class="w3-button w3-block w3-hover-green">Acceuil</a>
+    </div>
+    <div class="w3-col s3">
+      <a  href="#plans" class="w3-button w3-block w3-hover-green">Services Offerts</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3- w3-block w3-hover-green">À propos</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#contact" class="w3-button w3-block w3-hover-green">Me joindre</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+  <div class="w3-center">
+  </div>
+<div class="w3-center">
+  
+<h6 style="color:#000000" id="demo"></h6>
+</div>
+<script>
+var i = 0;
+var txt = 'Julie Adam';
+var speed = 111;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+
+</script>
+<div class="w3-content" style="max-width:1100px;margin-bottom:80px">
+  <div class="w3-center">
+    <p7 style="color:#000000";>Entraineuse Sportive</p>
+  </div>
+<div class="w3-center">
+  <div class="w3-center"><img src="photo-vue-panoramique-de-montreal-680.jpg" style="width: 80%;"/></div>
+  
+  <!-- Grid -->
+  <div class="w3-row-padding" id="plans">
+  <div class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span  class="w3-xlarge w3-bottombar w3-border-black w3-padding-16" style="color:rgb(0, 0, 0);">Services Offerts</span>
+    </div>
+    <div class="w3-col l3 m6 w3-black w3-hover-green w3-container w3-padding-16">
+      <h3>Design</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-hover-green w3-container w3-padding-16">
+      <h3>Branding</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-hover-green w3-container w3-padding-16">
+      <h3>Consultation</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-hover-green w3-container w3-padding-16">
+      <h3>Promises</h3>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    </div>
+  </div>
+
+  
+  <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16">À propos</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <div class="w3-container">
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="photo.png" alt="Julie" style="width:100%">
+        <div class="w3-container">
+          <h3>Julie</h3>
+          <p class="w3-opacity">Coach</p>
+          <p class="w3+opacity">Prenez action! Faites le pour vous! Ma mission est de vous accompagner à atteindre la meilleure version de vous-même. Plan adapté à votre réalité, amélioration de votre composition corporelle, énergie et saines habitudes de vie à long terme.
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <div class="w3-container">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
+    <span class="w3-xlarge w3-bottombar w3-border-black w3-padding-16" style="color:rgb(0, 0, 0)">Me joindre</span>
+  </div>
+
+  
+  <h4>Adresse courriel :<h4>
+  <h4>Numéro de téléphone : (+1)514-690-1653</h4>
+  
+  
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-center">
+  <h4></h4>
+  <a href="#" class="w3-button w3-black w3-hover-green w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>Retourner en haut</a>
+  <div class="w3-xlarge w3-section">
+    <a href=https://www.facebook.com/Coach-Julie-104088265054090/ class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href= https://www.instagram.com/coachjulieadam class="fa fa-instagram w3-hover-opacity"></a>
+  </div>
+  <p>Créé par <p1 title="W3.CSS" target="_blank" >Marcus Beaudry et Mathis Campagna</p1></p>
+  <p1>Avec l'aide de W3Sschool</p1>
+
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
